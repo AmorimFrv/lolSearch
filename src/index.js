@@ -11,7 +11,7 @@ const app = express();
 app.use(json());
 app.use(cors());
 app.listen(process.env.PORT || 3333);
-
+console.log('Rodando')
 app.get('/', async(req, res) => {
   res.json({
     message: 'hello world'
